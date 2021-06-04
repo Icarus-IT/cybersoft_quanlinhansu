@@ -56,7 +56,13 @@ public abstract class NhanSu {
 		
 	
 		this.hoTen =  cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputString("Họ tên:");
-		this.soDienThoai = cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputString("Số điện thoại:");		
+		do {
+			this.soDienThoai = cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputString("Số điện thoại:");	
+			if (this.soDienThoai.length()!=10) {
+				System.out.println("Số điện thoại phải có 10 số, Nhập lại !!!");
+			}
+		} while (this.soDienThoai.length()!=10);
+		
 		this.soNgayLam =  cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputFloatPositive("Số ngày làm:");
 
 	}
