@@ -158,7 +158,6 @@ public class QuanLyNhanSu {
 		System.out.println("1. Nhân viên.");
 		System.out.println("2. Trưởng phòng.");
 		System.out.println("3. Giám đốc.");
-		System.out.println("0. Không thêm nữa.");
 		System.out.print("Lựa chọn: ");
 
 		loaiNhanSu = sc.nextLine();

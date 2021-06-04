@@ -50,7 +50,13 @@ public class GiamDoc extends NhanSu{
 	public void nhapThongTin(Scanner sc) {
 		// TODO Auto-generated method stub
 		super.nhapThongTin(sc);
-		this.coPhan =  cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputFloatPositive("Cổ phần:");
+		do {
+			this.coPhan =  cybersoft.java12.oop.quanlynhansu.controller.inputUtil.inputFloatPositive("Cổ phần:");
+			if (this.coPhan>1) {
+				System.out.println("Cổ phần chỉ từ 0->1");
+			}
+		} while (this.coPhan>1);
+		
 	}
 
 }
